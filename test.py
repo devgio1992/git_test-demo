@@ -4,5 +4,5 @@ double = [x**2 for x in numbers]
 print(double)
 
 
-even = [x for x in numbers if x % 2 == 0]
-print(even)
+odd = [x for x in numbers if x % 2 != 0]
+print(odd)
