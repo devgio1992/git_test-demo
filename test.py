@@ -60,15 +60,21 @@ def delete_student():
     data = load_data()
 
     new_list = []
+    found = False
 
-    for student in data["students"]:
-        if student["id"] != search:
-            new_list.append(student)
+    for s in data["students"]:
+        if s["id"] == search:
+            found = True
+        else:
+            new_list.append(s)
 
     data["students"] = new_list
     save_data(data)
 
-    print("წაშლილია")
+    if found:
+        print("წაიშალა")
+    else:
+        print("ვერ მოიძებნა")
 
 
 # MAIN MENU
