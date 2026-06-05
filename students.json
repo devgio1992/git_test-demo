@@ -1,0 +1,14 @@
+{
+    "students": [
+        {
+            "id": 1,
+            "name": "\u10d2\u10d8\u10dd\u10e0\u10d2\u10d8",
+            "grade": 99
+        },
+        {
+            "id": 2,
+            "name": "irakli",
+            "grade": 98
+        }
+    ]
+}
